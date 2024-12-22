@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @media screen and (max-width: 800px) {
+            .image-container, .letter{
+            display: flex;
+            flex-wrap: wrap;
+                }
+            .image-container, .letter{
+                flex-direction: column;
+                flex: 1 1 100%;
+                }
+                }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .blind{
+            width: 0;
+            height: 0;
+            line-height: 0;
+            overflow: hidden;
+            position: absolute;
+            text-indent: -9999px;
+        }
+
+        /*body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+        }*/
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #f0f0f0;*/
+        }
+
+        .info_inner h1 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* 이미지 부분 */
+        .image-container {
+            width: 37%; /* 화면의 40%를 차지 */
+            overflow: hidden; /* 이미지가 영역을 벗어나지 않도록 */
+        }
+
+        .image-container img {
+            width: 100%; /* 이미지가 100% 너비를 차지 */
+            /*height: 100%; /* 이미지가 100% 높이를 차지 */
+            object-fit: cover; /* 이미지 비율을 유지하면서 영역에 맞추기 */
+        }
+
+        /* 나머지 부분 */
+        .letter {
+            width: 55%; /* 나머지 60% 영역 */
+            padding: 20px;
+        }
+
+
+
+
+        /*
+         common 
+        .container{
+            width: 100%;
+            padding: 0 20px;
+            margin: 0;
+        } */
+
+        .section{
+            padding: 50px 0;
+        } 
+
+
+        .info_inner{
+            display: flex;
+            justify-content: space-between;
+            /*padding: 20px;*/
+            margin-bottom: 30px;
+            margin-left: 50px;
+            margin-right: 45px;
+        }
+        
+        .info_inner h1 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* .group{
+            width: 40%;
+            height: 800px;
+            margin-left: 80px;
+        }
+
+        .letter{
+            width: 40%;
+            height: 800px;
+            margin-right: 80px;
+        }*/
+
+         .letter_paragraph h4{
+            font-size: 16px;
+            margin-bottom: 10px; 
+         }
+
+         .letter_line p{
+            font-size: 15px;
+         }
+         .letter_executive{
+            font-size: 15px;
+         }
+        
+
+    </style>
+</head>
+
+<body>
+    <section id="infoType" class="info_wrap section">
+        <h2 class="blind">동아리 소개</h2> 
+        <div class="info_inner">
+            <div class="image-container">
+                <h1>동아리 소개</h1>
+                <img src="menu_info.jpg" alt="사진">
+            </div>
+            <div class="letter">
+                <div class="paragraph">
+                    <h4>"보라, 내가 세상 끝 날까지 언제나 너희와 함께 있겠다" (마태 28: 20)</h4>
+                    <br>
+                </div>
+                <div class="line">
+                    <p>+ 평화를 빕니다.</p>
+                    <br>
+                    <p>서강 복사단은 가톨릭 신앙과 세계관 그리고 예수회 영성 전통에 기반하여 서강인들을 넓게 섬기고 무엇보다 서강 공동체의 영적 필요에 봉사하고자 합니다.</p>
+                    <br>
+                    <p>복사단은 서강 공동체 안에서 그리스도교의 교회 일치 운동과 종교간의 대화를 증진 하는 노력도 기울임으로써, 선의의 모든 사람들과 더불어 개인과 사회의 구원과 행복에 대해 함께 공부하고 그 실현을 위해 함께 협력하며 걸어가는 길도 찾고자 합니다.</p>
+                    <br>
+                    <p>복사단이 성이냐시오 성당을 중심으로 특별히 환대의 장소가 되고 기쁨 안에서 활동하는 가운데 위안을 받을 수 있는 곳이 되기를 소망합니다.</p>
+                </div>
+                <div class="executive">
+                    <br>
+                    <br>
+                    <h4>단장</h4>
+                    <p>이하윤 라파엘</p>
+                    <br>
+                    <h4>부단장</h4>
+                    <p>김선중 하상바오로</p>
+                    <br>
+                    <h4>총무</h4>
+                    <p>김민지 라파엘라</p>
+                    <br>
+                    <h4>교육부장</h4>
+                    <p>유승민 토마스</p>
+                    <br>
+                    <h4>담당 STAFF</h4>
+                    <p>여명모(하상바오로) 신부: 교목 교수</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

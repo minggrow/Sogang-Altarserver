@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .blind{
+            width: 0;
+            height: 0;
+            line-height: 0;
+            overflow: hidden;
+            position: absolute;
+            text-indent: -9999px;
+        }
+
+        .section{
+            padding: 50px 0;
+        } 
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*background-color: #f0f0f0;*/
+        }
+
+        .bulletin h1 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            margin-left: 50px;
+        }
+
+        .bulletin_pho img {
+            width: 100%; /* 이미지가 100% 너비를 차지 */
+            /*height: 100%; /* 이미지가 100% 높이를 차지 */
+            object-fit: cover; /* 이미지 비율을 유지하면서 영역에 맞추기 */
+        }
+    </style>
+</head>
+<body>
+    <section id="bulletinType" class="bulletin_wrap section">
+        <h2 class="blind">게시판</h2>
+        <div class="content_inner">
+            <div class="bulletin">
+                <h1>게시판</h1>
+                <div class="bulletin_pho">
+                    <img src="belletin.png" alt="bulletin">
+            </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

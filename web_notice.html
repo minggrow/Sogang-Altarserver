@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헤더</title>
+    <style>
+        /* fonts */
+        @font-face {
+            font-family: 'sogang university';
+            src: url('./fonts/sogang university.ttf') format('truetype');
+        }
+
+        /* reset */
+        *{
+            margin: 0;
+            padding: 0;
+        } 
+
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        li{
+            list-style: normal;
+        }
+        em{
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            /* font-family: Arial, sans-serif; /* 기본 글씨체 */
+        }
+
+        /*headerType*/
+        .header_inner{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            /*border-bottom: 1px solid #ccc;*/
+        }
+        
+        /* 로고 이미지 */
+        .header_logo{
+            margin: 0;
+            padding: 0; 
+            height: 50px;
+            margin-left: 30px;
+        }
+        .title {
+            display: inline-block;
+            flex-direction: column;
+            font-family: 'sogang university', Arial, sans-serif;
+        }
+            
+        .title .sogang {
+            font-size: 30px; /* 서강대학교 텍스트 크기 */
+        }
+        
+        .title .altar {
+            font-size: 20px; /* 복사단 텍스트 크기 */
+        }
+
+        .header_menu{
+            width: 50%;
+            text-align: center;
+        }
+
+        .header_menu li{
+            display: inline;
+        }
+        .header_menu li a{
+            padding: 12px 30px;
+            margin: 0 5px;
+            transition: background-color 0.33s;
+        }
+        .header_menu li a:hover{
+            background: #f3f3f3;
+            border-radius: 5px;
+        }
+        .header_member{
+            width: 20%;
+            text-align: right;
+        }
+        .header_member a{
+            font-size: 16px;
+            border: 1px solid #000;
+            padding: 10px 25px;
+            border-radius: 50px;
+        }
+        .login_btn{
+            text-decoration: none;
+            font-size: 20px;
+            color: #000;
+            margin: 0;
+            /* margin-bottom: 15px; */
+            background: #f5f5f5;
+            padding: 7px 13px;
+            border-radius: 5px;
+            display: inline-block;
+         }
+
+        .login_btn:hover{
+            color: #0056b3;
+         }
+    </style>
+</head>
+
+<body>
+    <header id="headerType" class="header_wrap">
+        <!-- 로고 이미지 -->
+       
+        <div class="header_inner">
+            <a href="index.html">
+                <img src="Symbol.png" alt="header_logo" class="header_logo">
+            </a>
+
+            <!-- 텍스트 -->
+            <div class="title">
+                <span class="sogang">서강대학교 </span>
+                <span class="altar">복사단</span>
+              </div>
+            
+            <nav class="header_menu">
+                <ul>
+                    <ul>
+                        <li><a href="web_info.html">복사단 소개</a></li>
+                        <li><a href="web_calendar.html">복사 일정</a></li>
+                        <li><a href="web_notice.html">공지사항</a></li>
+                        <li><a href="web_bulletin.html">게시판</a></li>
+                    </ul>
+                </ul>
+            </nav>
+
+            <div class="header_member">
+                <a href="#" class="login_btn">로그인</a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
+    </header>
+
+
+
+    <!-- 정보 내용 (list.html) -->
+    <iframe src="list.html" width="100%" height="500px" frameborder="0"></iframe>
+
+
+
+    <!-- 푸터 -->
+    <footer>
+        <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>푸터 영역</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        footer {
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        footer img {
+            width: 100%; /* 이미지 크기 조절 */
+            height: auto;
+        }
+
+        footer .footer-links {
+            width: 35%;
+            margin-left: 40px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+
+        footer .footer-links a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- 페이지 내용 -->
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.sogang.ac.kr/ko/home" target="_blank">서강대학교</a>
+            <a href="https://saint.sogang.ac.kr/irj/portal" target="_blank">SAINT</a>
+            <a href="https://kyomok.sogang.ac.kr/kyomok/index_new.html" target="_blank">교목처</a>
+        </div>
+        <img src="footer.jpg" alt="Footer Image">
+    </footer>
+</body>
+</html>
+
+    </footer>
+</body>
+</html>
